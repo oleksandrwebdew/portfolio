@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Web Integrator | Portfolio</title>
+  <meta name="description" content="Портфолио веб-интегратора: HTML, CSS, JavaScript. Адаптивная верстка и интерактив.">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Web Coder</div>
+      <!-- Бургер (для мобильных) -->
+      <button id="burger" class="burger" aria-label="Открыть меню">
+        ☰
+      </button>
+      <nav class="nav" id="menu">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Web Integrator / Frontend Developer</h1>
+      <p>HTML • CSS • JavaScript</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">Мои проекты</a>
+        <a href="#contact" class="btn btn-outline">Связаться</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <p>
+        Я веб-интегратор, специализируюсь на адаптивной верстке
+        и добавлении интерактивных элементов на JavaScript.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2>Навыки</h2>
+
+      <ul class="skills-list">
+        <li>HTML5 (семантика)</li>
+        <li>CSS3 / Flexbox / Grid</li>
+        <li>Адаптивная верстка</li>
+        <li>JavaScript (DOM, события)</li>
+        <li>Git / GitHub</li>
+       <!----<li>Figma (чтение макетов)</li>-->
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2>Проекты</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <h3>Landing Page</h3>
+          <p>Адаптивный лендинг с интерактивом</p>
+          <a href="#" target="_blank">Live</a>
+          <a href="#" target="_blank">GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>JS UI Components</h3>
+          <p>Модальное окно, слайдер, бургер-меню</p>
+          <a href="#">Live</a>
+          <a href="#">GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3>To-Do App</h3>
+          <p>JavaScript + LocalStorage</p>
+          <a href="#">Live</a>
+          <a href="#">GitHub</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Контакты</h2>
+
+      <p>Свяжитесь со мной удобным способом:</p>
+
+      <ul class="contact-list">
+        <li>Email: port.web.coder@gmail.com</li>
+        <li>Telegram: @port_web_coder</li>
+        <li>GitHub: github.com/username</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Web Coder</p>
+    </div>
+  </footer>
+<button id="toTop">↑</button>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
