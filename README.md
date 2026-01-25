@@ -85,7 +85,7 @@ https://github.com/oleksandrwebdew/task-manager
 
 
 
-### 📸 Project Screenshots
+### 📸 Preview
 
 <p>
   <img src="./screenshots/landing.png" width="300" />
