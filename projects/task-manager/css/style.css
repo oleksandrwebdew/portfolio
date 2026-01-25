@@ -1,0 +1,199 @@
+
+/* ===============================
+   RESET
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   BASE
+=============================== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* ===============================
+   CONTAINER
+=============================== */
+.container {
+  max-width: 420px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   TITLE
+=============================== */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* ===============================
+   FORM
+=============================== */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form button {
+  padding: 12px 16px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1e4fd8;
+}
+
+/* ===============================
+   FILTERS
+=============================== */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #eaeaea;
+}
+
+/* ===============================
+   COUNTER
+=============================== */
+#counter {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===============================
+   TASK LIST
+=============================== */
+ul {
+  list-style: none;
+}
+
+/* ===============================
+   TASK ITEM
+=============================== */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+  background: #f3f4f6;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* ===============================
+   TASK CONTENT
+=============================== */
+li span {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* ===============================
+   CHECKBOX
+=============================== */
+li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* ===============================
+   DELETE BUTTON
+=============================== */
+li button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #dc2626;
+}
+
+/* ===============================
+   COMPLETED TASK
+=============================== */
+li.completed {
+  opacity: 0.6;
+}
+
+li.completed span {
+  text-decoration: line-through;
+}
+
+/* ===============================
+   THEME BUTTON
+=============================== */
+#themeToggle {
+  margin-top: 15px;
+  background: #e5e7eb;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===============================
+   DARK MODE
+=============================== */
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+}
+
+body.dark li {
+  background: #2a2a2a;
+}
+
+body.dark input {
+  background: #2a2a2a;
+  color: white;
+  border-color: #444;
+}
+

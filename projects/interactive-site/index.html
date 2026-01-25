@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive UI Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">WebDev</div>
+
+  <div id="burger" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="menu" class="menu">
+    <a href="#">Home</a>
+    <a href="#">Slider</a>
+    <a href="#">Modal</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- MODAL BUTTON -->
+  <section class="modal-section">
+    <button id="openModal" class="btn-primary">
+      Open Modal
+    </button>
+  </section>
+
+  <!-- SLIDER -->
+  <section class="slider-section">
+    <div class="slider">
+      <button id="prev" class="slider-btn">‹</button>
+
+      <div class="slides">
+        <img src="https://picsum.photos/800/400?1" class="active" alt="">
+        <img src="https://picsum.photos/800/400?2" alt="">
+        <img src="https://picsum.photos/800/400?3" alt="">
+      </div>
+
+      <button id="next" class="slider-btn">›</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- MODAL -->
+
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="close">×</button>
+    <h2>Modal Window</h2>
+    <p>This is a simple modal window.</p>
+    <button class="modal-btn-close">Close</button>
+  </div>
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

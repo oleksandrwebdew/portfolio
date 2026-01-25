@@ -1,5 +1,8 @@
-console.log("JS работает");
+console.log("JS loaded");
 
+/* =========================
+   BURGER MENU
+========================= */
 const burger = document.getElementById("burger");
 const menu = document.getElementById("menu");
 
@@ -7,42 +10,76 @@ burger.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
 
-const links = document.querySelectorAll('a[href^="#"]');
+/* =========================
+   SMOOTH SCROLL (JS)
+========================= */
+const navLinks = document.querySelectorAll('a[href^="#"]');
 
-links.forEach(link => {
+navLinks.forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
 
     const targetId = link.getAttribute("href");
-    const target = document.querySelector(targetId);
+    const targetSection = document.querySelector(targetId);
 
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth"
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
       });
     }
 
-    // Закрываем меню на мобильном
+    // закрываем меню на мобиле
     menu.classList.remove("active");
   });
 });
 
-const sections = document.querySelectorAll(".section");
+/* =========================
+   ACTIVE NAV LINK
+========================= */
+const sections = document.querySelectorAll("section");
+const menuLinks = document.querySelectorAll(".nav a");
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
     }
   });
-}, {
-  threshold: 0.2
+
+  menuLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active");
+    }
+  });
 });
 
-sections.forEach(section => {
-  observer.observe(section);
-});
+/* =========================
+   SECTION FADE-IN
+========================= */
+const animatedSections = document.querySelectorAll(".section");
 
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+animatedSections.forEach(section => observer.observe(section));
+
+/* =========================
+   SCROLL TO TOP
+========================= */
 const toTop = document.getElementById("toTop");
 
 window.addEventListener("scroll", () => {
