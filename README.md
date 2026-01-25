@@ -85,7 +85,17 @@ https://github.com/oleksandrwebdew/task-manager
 
 ## 📸 Screenshots
 
-Screenshots of the projects are stored in the `screenshots/` folder.
+### 📸 Project Screenshots
+
+#### Landing Page
+![Landing Page](./screenshots/landing.png)
+
+#### Interactive UI Components
+![Interactive Site](./screenshots/interactive.png)
+
+#### Task Manager
+![Task Manager](./screenshots/task-manager.png)
+
 
 ---
 
