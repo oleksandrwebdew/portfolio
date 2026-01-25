@@ -91,7 +91,7 @@ https://github.com/oleksandrwebdew/task-manager
 ![Landing Page](./screenshots/landing.png)
 
 #### Interactive UI Components
-![Interactive Site](./screenshots/interactive.png)
+![Interactive Site](./screenshots/interactive-site.png)
 
 #### Task Manager
 ![Task Manager](./screenshots/task-manager.png)
