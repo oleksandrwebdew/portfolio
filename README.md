@@ -83,18 +83,16 @@ https://github.com/oleksandrwebdew/task-manager
 
 ---
 
-## 📸 Screenshots
+
 
 ### 📸 Project Screenshots
 
-#### Landing Page
-![Landing Page](./screenshots/landing.png)
+<p>
+  <img src="./screenshots/landing.png" width="300" />
+  <img src="./screenshots/interactive-site.png" width="300" />
+  <img src="./screenshots/task-manager.png" width="300" />
+</p>
 
-#### Interactive UI Components
-![Interactive Site](./screenshots/interactive-site.png)
-
-#### Task Manager
-![Task Manager](./screenshots/task-manager.png)
 
 
 ---
