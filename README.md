@@ -89,7 +89,7 @@ https://github.com/oleksandrwebdew/task-manager
 
 <p>
   <img src="./screenshots/landing.png" width="300" />
-  <img src="./screenshots/interactive-site.png" width="300" />
+  <img src="./screenshots/portfolio_projects_interactive-site.png" width="300" />
   <img src="./screenshots/task-manager.png" width="300" />
 </p>
 
